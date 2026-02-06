@@ -9,4 +9,3 @@ function getAllEmails(peopleData) {
 }
 
 module.exports = getAllEmails;
-
