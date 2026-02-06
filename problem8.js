@@ -12,3 +12,4 @@ function getCityAndCountry(peopleData) {
 }
 
 module.exports = getCityAndCountry;
+/*(end)*/
