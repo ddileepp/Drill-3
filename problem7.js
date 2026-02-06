@@ -14,3 +14,4 @@ function getNameAndEmailByAge(peopleData, age) {
 }
 
 module.exports = getNameAndEmailByAge;
+/*end*/
