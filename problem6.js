@@ -8,4 +8,4 @@ function getFirstHobbies(peopleData) {
   return firstHobbies;
 }
 
-module.exports = getFirstHobbies;
+module.exports = getFirstHobbiesS;
