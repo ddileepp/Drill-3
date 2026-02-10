@@ -1,11 +1,7 @@
 function getFirstHobbies(peopleData) {
-  let firstHobbies = [];
-
-  for (let i = 0; i < peopleData.length; i++) {
-    firstHobbies.push(peopleData[i].hobbies[0]);
-  }
-
-  return firstHobbies;
+  return peopleData.map(function (person) {
+    return person.hobbies[0];
+  });
 }
 
-module.exports = getFirstHobbiesS;
+module.exports = getFirstHobbies;
