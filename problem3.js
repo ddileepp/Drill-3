@@ -1,13 +1,12 @@
 function getAustralianStudents(peopleData) {
-  let result = [];
-
-  for (let i = 0; i < peopleData.length; i++) {
-    if (peopleData[i].isStudent === true && peopleData[i].country === 'Australia') {
-      result.push(peopleData[i].name);
-    }
-  }
-
-  return result;
+  return peopleData
+    .filter(function (person) {
+      return person.isStudent === true && person.country === "Australia";
+    })
+    .map(function (person) {
+      return person.name.first + " " + person.name.last;
+    });
 }
 
 module.exports = getAustralianStudents;
+
