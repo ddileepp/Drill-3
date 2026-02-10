@@ -1,15 +1,10 @@
 function getCityAndCountry(peopleData) {
-  let locations = [];
-
-  for (let i = 0; i < peopleData.length; i++) {
-    locations.push({
-      city: peopleData[i].city,
-      country: peopleData[i].country
-    });
-  }
-
-  return locations;
+  return peopleData.map(function (person) {
+    return {
+      city: person.city,
+      country: person.country
+    };
+  });
 }
 
 module.exports = getCityAndCountry;
-/*(end)*/
