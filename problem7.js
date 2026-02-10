@@ -1,17 +1,14 @@
 function getNameAndEmailByAge(peopleData, age) {
-  let output = [];
-
-  for (let i = 0; i < peopleData.length; i++) {
-    if (peopleData[i].age === age) {
-      output.push({
-        name: peopleData[i].name,
-        email: peopleData[i].email
-      });
-    }
-  }
-
-  return output;
+  return peopleData
+    .filter(function (person) {
+      return person.age === age;
+    })
+    .map(function (person) {
+      return {
+        name: person.name,
+        email: person.email
+      };
+    });
 }
 
 module.exports = getNameAndEmailByAge;
-/*end*/
