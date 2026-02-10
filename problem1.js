@@ -1,12 +1,7 @@
 function getAllEmails(peopleData) {
-  let emails = [];
-
-  for (let i = 0; i < peopleData.length; i++) {
-    emails.push(peopleData[i].email);
-  }
-
-  return emails;
+  return peopleData.map(function (person) {
+    return person.email;
+  });
 }
 
 module.exports = getAllEmails;
-/*end*/
